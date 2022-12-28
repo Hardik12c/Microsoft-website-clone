@@ -13,33 +13,65 @@
 <body>
     <div class="navbar flex justify-between items-center p-4">
         <div class="flex md:hidden justify-between items-center">
-            <div class="hamburger inline-block cursor-pointer">
-                <div class="line bg-black w-6 h-0.5 my-1 rounded-sm"></div>
-                <div class="line bg-black w-6 h-0.5 my-1 rounded-sm"></div>
-                <div class="line bg-black w-6 h-0.5 my-1 rounded-sm"></div>
+            <div class="hamburger cursor-pointer">
+                <div class="line bg-black w-6 h-[0.15rem] my-1 rounded-sm"></div>
+                <div class="line bg-black w-6 h-[0.15rem] my-1 rounded-sm"></div>
+                <div class="line bg-black w-6 h-[0.15rem] my-1 rounded-sm"></div>
             </div>
-            <div class="search">Search</div>
+            <div class="search w-4 ml-6"><img src="./images/search.svg" alt=""></div>
         </div>
         <div class="md:order-1 flex">
-            <div>Microsoft</div>
-            <div class="features absolute bg-gray-200 inset-0 w-fit -translate-x-96 my-12 md:w-auto md:bg-white md:translate-x-0 md:static md:my-0 md:flex md:mx-4 md:space-x-2">
-                <div class="fitem">Microsoft 365</div>
-                <div class="fitem">Teams</div>
-                <div class="fitem">Windows</div>
-                <div class="fitem">Surface</div>
-                <div class="fitem hidden lg:block">XBox</div>
-                <div class="fitem lg:hidden">More</div>
-                <div class="fitem hidden lg:block ">Support</div>
+            <div class="w-28 md:mr-8"><img src="./images/microsoftlogo.png" alt=""></div>
+            <div class="features absolute bg-gray-200 inset-0 w-fit -translate-x-96 my-12 md:w-auto md:bg-white md:translate-x-0 md:static md:my-0 md:justify-center md:items-center md:flex md:mx-4 md:space-x-7">
+                <div class="fitem cursor-pointer text-sm hover:underline">Microsoft 365</div>
+                <div class="fitem cursor-pointer text-sm hover:underline">Teams</div>
+                <div class="fitem cursor-pointer text-sm hover:underline">Windows</div>
+                <div class="fitem cursor-pointer text-sm hover:underline">Surface</div>
+                <div class="fitem cursor-pointer text-sm hover:underline hidden lg:block">XBox</div>
+                <div class="fitem  cursor-pointer text-sm hover:underline lg:hidden">More</div>
+                <div class="fitem cursor-pointer text-sm hover:underline hidden lg:block ">Support</div>
             </div>
         </div>
-        <div class="md:order-2 flex">
-            <div class="hidden md:block"> All Microsoft Search</div>
-            <div>
+        <div class="md:order-2 flex items-center">
+            <div class="hidden md:block cursor-pointer text-sm hover:underline"> All Microsoft</div>
+            <div class="hidden md:block ml-4 mr-2 cursor-pointer text-sm hover:underline"> Search</div>
+            <div class="hidden md:block search w-4 mx-2"><img src="./images/search.svg" alt=""></div>
+            <div class="search w-4 mx-2"><img src="./images/cart.svg" alt=""></div>
+            <div class="search w-4 mx-2"><img src="./images/user.svg" alt=""></div>
+            <!-- <div>
                 cart account
-            </div>
+            </div> -->
         </div>
     </div>
-
+    <div class="slider flex flex-col-reverse md:flex-row">
+        <div class="left bg-white flex flex-col justify-center items-baseline shadow-md md:shadow-none p-6 md:bg-[#f4f4f4] md:px-10 md:py-0">
+            <span class="md:bg-white md:p-1 md:rounded text-red-700 mx-2 font-medium">New</span>
+            <h1 class="text-2xl font-medium md:my-1.5 my-2">Surface Pro 9</h1>
+            <p class="text-base md:my-1 my-2"> Keep spirits bright with a game-changing combo of laptop power and tablet flexibility—all in one ultra-portable device</p>
+            <button class="mt-6 md:mt-2 bg-black text-white text-base font-semibold px-3 rounded-sm py-2">Learn more</button>
+        </div>
+        <div class="right">
+            <img class="" src="./images/sm slider image.avif" alt="">
+        </div>
+    </div>
+    <div class="promo flex justify-center my-20 space-x-10 flex-wrap">
+        <div class="elements ml-2 flex items-center flex-col underline font-medium my-4">
+            <img class="ml-4" src="./images/windowlogo.webp" alt="">
+            <span>Choose your Microsoft 365</span>
+        </div>
+        <div class="elements flex items-center my-4 justify-center flex-col underline font-medium">
+            <img src="./images/Tabletlogo.webp" alt="">
+            <span>Explore Surface devices</span>
+        </div>
+        <div class="elements flex items-center my-4 justify-center flex-col underline font-medium">
+            <img src="./images/xboxlogo.webp" alt="">
+            <span>Buy Xbox games</span>
+        </div>
+        <div class="elements flex my-4 items-center justify-center flex-col underline font-medium">
+            <img src="./images/windowlogo.webp" alt="">
+            <span>Get Windows 11</span>
+        </div>
+    </div>
 </body>
 
 </html>
